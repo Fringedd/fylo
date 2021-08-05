@@ -16,7 +16,7 @@ body{
 }
 
 .background{
-    background-image: url(./images/bg-desktop.png);
+    background-image: url(bg-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     top:175px;
@@ -172,7 +172,7 @@ position: absolute;
     align-items:center;
     flex-direction: column;
     padding:10px;
-    background-image: url(./images/bg-mobile.png);
+    background-image: url(bg-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
 
