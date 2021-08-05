@@ -1,0 +1,227 @@
+body{
+    padding:0;
+    margin:0;
+    min-height:100vh;
+    background-color: hsl(229, 57%, 11%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-size:14px;
+}
+*{
+    box-sizing: border-box;
+}
+
+.background{
+    background-image: url(./images/bg-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:175px;
+    width: 100%;
+    height:50vh;
+    position: relative;
+}
+
+.right{
+    width: 55%;
+}
+.box2{
+        background-color:hsl(228, 56%, 26%); 
+        padding: 20px 30px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        flex-direction:column;
+        align-self: center;
+        justify-content: center;
+        margin-top:30px;
+}
+
+.box2 p{
+    color:white;
+    font-size:12px;
+}
+
+.left{
+    width:40%;
+    margin-right:5%;
+}
+.box1{
+    background-color:hsl(228, 56%, 26%); 
+    padding:30px;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    width:100%
+}
+.logo{
+    width:100px;
+    height:55px;
+}
+.logo img{
+    max-width: 100%;
+    max-height:100%;
+}
+.contain{
+    width:750px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+.folders{
+    display: flex;
+    align-items: center;
+    width:200px;
+}
+.container{
+    background-color:hsl(229, 57%, 11%);
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+    height:40px;
+    margin-right:10px;
+
+}
+
+.loading{
+    width:100%;
+    height:15px;
+    background-color:hsl(229, 57%, 11%);
+    border-radius: 30px;
+    position: relative;
+
+}
+.loading2{
+    width:70%;
+    height:15px;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    border-radius: 30px;
+    position:relative;
+
+}
+
+.ball{
+    border-radius:30px;
+    background-color: white;
+    height:15px;
+    width: 15px;
+    margin-left:auto;
+    position:relative;
+}
+
+.text{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.text p{
+    padding:0;
+}
+
+.left-text{
+    margin-right:auto;
+}
+
+.gb{
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    overflow: visible;
+    top: -25px;
+    right: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    
+
+}
+
+.gb::before{
+
+
+position: absolute;
+    content: "";
+    height: 35px;
+    width: 45px;
+    background-color: white;
+    bottom: -8px;
+    display: flex;
+    left: 90%;
+    transform: translate(-85%) rotate(30deg);
+}
+
+
+@media only screen and (max-width: 376px) {
+    body {
+      width:375px;
+      display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding:10px;
+    background-image: url(./images/bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    }
+    .background{
+            top:0px;
+            width: 100%;
+            height:100vh;
+            position: relative;
+            display: none;
+
+    }
+    .contain{
+        flex-direction:column;
+        width:300px;
+        height:100%;
+    }
+    .left{
+        width:100%;
+        height:20%;
+    }
+    .right{
+        width:100%;
+        height:55%;
+
+    }
+    .gb::before{
+
+        display: none;
+        position: absolute;
+            content: "";
+            height: 35px;
+            width: 45px;
+            background-color:transparent;
+            bottom: -8px;
+            display: flex;
+            left: 90%;
+            transform: translate(-85%) rotate(30deg);
+        }
+        .gb{
+            position: absolute;
+            background-color: white;
+            min-width: 150px;
+            overflow: visible;
+            top: 400px;
+            right: 85px;
+            padding: 10px;
+            border-radius: 10px;
+            
+        
+        }
+  }
